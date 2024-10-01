@@ -14,6 +14,8 @@ public class Launcher {
         System.out.println("We can type \"sout\" to quickly generate a print statement!");
 
         System.out.println("Here's a new line");
+
+        String s = "hello";
         
         /* This is a block comment AKA multi-line comment
 
