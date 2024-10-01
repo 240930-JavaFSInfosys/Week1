@@ -12,6 +12,8 @@ public class Launcher {
         System.out.println("We are learning fundamental Java!");
 
         System.out.println("We can type \"sout\" to quickly generate a print statement!");
+
+        System.out.println("Here's a new line");
         
         /* This is a block comment AKA multi-line comment
 
