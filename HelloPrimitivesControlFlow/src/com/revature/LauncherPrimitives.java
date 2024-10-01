@@ -86,6 +86,15 @@ public class LauncherPrimitives {
         //If you need to avoid this, then you should increment/decrement BEFORE the variable
         System.out.println(++funnyNumber); //25
 
+        //type casting example----------------
+
+        double dub = 5.5;
+
+        int myInt = (int)dub; //this is an example of type casting - converting a double to an int
+
+        System.out.println(myInt); //java will omit the decimal point since this is an int
+
+
     }
 
 }
