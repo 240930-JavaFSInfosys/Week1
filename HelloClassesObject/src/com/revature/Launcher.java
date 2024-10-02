@@ -1,6 +1,7 @@
 package com.revature;
 
 import com.revature.models.Animal;
+import com.revature.models.Dog;
 
 public class Launcher {
 
@@ -31,6 +32,22 @@ public class Launcher {
         System.out.println(a2.makeSound());
         System.out.println(a3.makeSound());
 
+        System.out.println("=============================(Use our new Dog subclass)");
+
+        //Instantiate a Dog object with the no-args constructor
+        Dog d = new Dog();
+
+        //let's use some dog methods
+        d.eat(); //notice how this eat() method is different from the Animal eat() method
+        d.fetch("ball");
+
+        //Using the all-args constructor now
+        Dog d2 = new Dog(4, 5, "AWOOOOOO", "foxhound");
+        Dog d3 = new Dog(4, 8, "bark", "terrier");
+
+        //let's use some variables and methods -
+        System.out.println(d2.breed + " says " + d2.makeSound());
+        System.out.println(d3.breed + " says " + d3.makeSound());
 
     }
 

@@ -2,7 +2,7 @@ package com.revature.models;
 
 //This is a Class meant to MODEL an Animal - Think of it like a blueprint for Animal Objects
 //This Class defines all of the attributes (variables) and behaviors (methods) that an Animal can have
-public class Animal {
+public class Animal extends Object{
 
     //These are 3 Animal variables - data that describes an Animal
     public int legs;
@@ -50,6 +50,7 @@ public class Animal {
         this.age = age;
         this.sound = sound;
     }
+
 
     //NOTE: If we don't define a constructor, Java will provide a no-args constructor for us with totally default values
     //Once we define a custom constructor, this default no-args constructor goes away
