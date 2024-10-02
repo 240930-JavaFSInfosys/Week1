@@ -55,7 +55,4 @@ public class Animal extends Object{
     //NOTE: If we don't define a constructor, Java will provide a no-args constructor for us with totally default values
     //Once we define a custom constructor, this default no-args constructor goes away
 
-
-    //TODO: subclass that extends this Animal Class
-
 }

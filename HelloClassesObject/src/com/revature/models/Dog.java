@@ -46,4 +46,9 @@ public class Dog extends Animal{
         super(legs, age, sound);
         this.breed = breed; //and of course, Dog needs to handle its own unique fields
     }
+
+    /*METHOD OVERLOADING - Another example of Polymorphism
+
+    Method overloading is having multiple methods with the same name, but a different list of parameters
+    The main example of overloading we see is constructors */
 }
