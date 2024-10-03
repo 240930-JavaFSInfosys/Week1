@@ -87,7 +87,20 @@ public class Launcher {
 
         System.out.println("===============================(StringBuilder Practice Problem Goes Here)");
 
+        //StringBuilder is a Class that behaves like a String, except it's MUTABLE (can be changed)
+        StringBuilder sb = new StringBuilder(pangram); //Initialize a StringBuilder with our pangram String
 
+        //reverse
+        sb.reverse();
+
+        //append
+        sb.append(" BEN WUZ HERE >:D ");
+
+        //insert something else into index 12
+        sb.insert(12, "Pepe Silvia");
+
+        //print out the StringBuilder - notice we've changed the actual StringBuilder object! it's ~mutable~
+        System.out.println(sb);
 
     }
 
