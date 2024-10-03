@@ -102,6 +102,9 @@ public class Launcher {
         //print out the StringBuilder - notice we've changed the actual StringBuilder object! it's ~mutable~
         System.out.println(sb);
 
+        //It's easy to convert a StringBuilder to a String
+        String newString = sb.toString();
+
     }
 
 }
