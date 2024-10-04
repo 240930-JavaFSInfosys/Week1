@@ -1,5 +1,6 @@
 package com.revature;
 
+import com.revature.exceptions.NotACookieException;
 import com.revature.models.CookieEatingMonster;
 import com.revature.models.Food;
 
@@ -7,7 +8,10 @@ import java.io.FileNotFoundException;
 
 public class Launcher {
 
-    public static void main(String[] args) {
+    //main will try to throw NotACookieException when encountered... but there's nowhere to throw it
+    //so your code will just crash! There should always be a try/catch at the end of a throws chain
+    //It's common for a method to throw an Exception, but there should be a try/catch somewhere.
+    public static void main(String[] args) throws NotACookieException {
 
         System.out.println("==============(Throwing some Runtime Exceptions, AKA Unchecked Exception)");
 
@@ -70,6 +74,14 @@ public class Launcher {
 
         monster.eatCookieWithTryCatch(food2); //no problem, cause we gave him a cookie
 
+        //now, we'll use the eatCookieWithThrows method instead
+
+        //we could wrap this in a try/catch, but we're going to put the "throws" on main now
+        monster.eatCookieWithThrows(food2); //all good! monster got a cookie
+
+        //the compiler will allow us to run this, since we said main throws NotACookieException
+        //but...it still crashes. see the comments at the top of main to see why
+        monster.eatCookieWithThrows(food1);
 
     }
 

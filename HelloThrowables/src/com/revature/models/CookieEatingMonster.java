@@ -26,4 +26,16 @@ public class CookieEatingMonster {
 
     }
 
+    //This method THROWS NotACookieException, which makes it not responsible for handling it
+    //If the Exception gets thrown here, it will be the responsibility of the method that called it.
+    public void eatCookieWithThrows(Food food) throws NotACookieException{
+
+        if(food.isCookie){
+            System.out.println("YESSS MORE COOKIES GOABOABGOABGOAGDABSOFSAOFB");
+        } else {
+            throw new NotACookieException("I caught a NotACookieException");
+        }
+
+    }
+
 }
