@@ -125,6 +125,12 @@ public class Launcher {
         //use .get() to get a value from a map's key
         System.out.println("The trainer at key 1 is: " + trainers.get(1));
 
+        /* Why are we using Integer instead of int?
+
+        Integer is a WRAPPER CLASS for int. Maps and Collections (and other things) only take objects
+        So we use Integer instead of int to store our keys in the above Map
+        Wrapper Classes are CLASS-BASED REPRESENTATIONS of primitive data types */
+
     }
 
 }
