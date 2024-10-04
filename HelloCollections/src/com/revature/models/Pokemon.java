@@ -62,4 +62,14 @@ public class Pokemon {
     public void setLevel(int level) {
         this.level = level;
     }
+
+    //the toString() method allows us to print out the object and its values as a String. No more memory address!
+    //right click -> generate -> toString()
+    @Override
+    public String toString() {
+        return "Pokemon{" +
+                "name='" + name + '\'' +
+                ", level=" + level +
+                '}';
+    }
 }
