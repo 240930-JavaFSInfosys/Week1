@@ -1,5 +1,8 @@
 package com.revature;
 
+import com.revature.models.CookieEatingMonster;
+import com.revature.models.Food;
+
 import java.io.FileNotFoundException;
 
 public class Launcher {
@@ -52,6 +55,21 @@ public class Launcher {
         }
 
         //Rule of thumb for catch block order: Most specific to most general
+
+        System.out.println("============================(Using our Custom Checked Exception)");
+
+        //Let's make some Food objects and a CookieEatingMonster
+        Food food1 = new Food("Steak", false);
+        Food food2 = new Food("White Chocolate Macadamia", true);
+        CookieEatingMonster monster = new CookieEatingMonster();
+
+        //Let's try to feed the monster!
+        monster.eatCookieWithTryCatch(food1); //This will throw and catch an exception, then printStackTrace
+
+        System.out.println("We just printed the stack trace from the caught exception! We didn't crash");
+
+        monster.eatCookieWithTryCatch(food2); //no problem, cause we gave him a cookie
+
 
     }
 
