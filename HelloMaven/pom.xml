@@ -17,8 +17,17 @@
     <!-- Any external libraries (dependencies) will be in this tag -->
     <dependencies>
 
-
+        <!-- JUnit dependency - we can't write any tests without this -->
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
 
     </dependencies>
+
+    <!-- YOU MUST MAVEN REFRESH WHEN YOU EDIT THE POM.XML OR YOUR CHANGES WON'T TAKE -->
+    <!-- It's common for a dependency version to have an error until you refresh -->
 
 </project>
