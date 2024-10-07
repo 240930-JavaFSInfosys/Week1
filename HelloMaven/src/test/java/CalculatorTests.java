@@ -28,7 +28,6 @@ public class CalculatorTests {
         System.out.println("Test complete! We would close any resources opened for the test here!");
     }
 
-
     //Why would we bother with before/after each?
     //Typically used to open resources before a test, or close them after a test (DB connection?)
 
