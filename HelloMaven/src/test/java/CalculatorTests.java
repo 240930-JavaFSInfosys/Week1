@@ -1,6 +1,8 @@
 //Tests Classes are just typical Java Classes, but it's the METHODS that are special
 
 import com.revature.Calculator;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*; //now we have access to all assertions in one line
@@ -11,15 +13,30 @@ public class CalculatorTests {
     //Instantiate a Calculator object
     Calculator calc = new Calculator();
 
-    //TODO: beforeEach and beforeAll
+    //NOTE: I accidentally gave us JUnit 4! So we have use "@Before" and "@After".
+    //Pls study BeforeEach and AfterEach in JUnit 5 for QC etc (it's all in the notes)
+
+    //beforeEach lets us define logic that runs BEFORE EACH test
+    @Before
+    public void beforeEach(){
+        System.out.println("Running a test... Maybe we would open some resource here?");
+    }
+
+    //afterEach lets us define logic that runs AFTER EACH test
+    @After
+    public void afterEach(){
+        System.out.println("Test complete! We would close any resources opened for the test here!");
+    }
+
+
+    //Why would we bother with before/after each?
+    //Typically used to open resources before a test, or close them after a test (DB connection?)
 
     //positive test for add()
     @Test
     public void testAdd(){
-
         int result = calc.add(5, 10);
         assertEquals(result, 15);
-
     }
 
     //another positive test for add()
