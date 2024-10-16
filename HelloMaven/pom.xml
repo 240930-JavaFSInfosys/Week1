@@ -25,6 +25,14 @@
             <version>4.13.2</version>
         </dependency>
 
+        <!--here's our Logback dependency, which will allow us to generate logs-->
+        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.14</version>
+        </dependency>
+
     </dependencies>
 
     <!-- YOU MUST MAVEN REFRESH WHEN YOU EDIT THE POM.XML OR YOUR CHANGES WON'T TAKE -->
