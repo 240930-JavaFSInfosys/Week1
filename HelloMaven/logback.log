@@ -1,0 +1,9 @@
+13:40:57.540 [main] INFO  com.revature.Calculator - Adding 5 and 10
+13:40:57.550 [main] INFO  com.revature.Calculator - Adding -20 and -40
+13:53:03.010 [main] INFO  com.revature.Calculator - Adding 5 and 10
+13:53:03.019 [main] INFO  com.revature.Calculator - Adding -20 and -40
+13:53:03.019 [main] INFO  com.revature.Calculator - Dividing 15.0 by 2.0
+13:58:10.063 [main] WARN  com.revature.Calculator - User tried to divide by zero! Maybe stop them on the front end before it gets here!
+13:58:10.099 [main] INFO  com.revature.Calculator - Adding 5 and 10
+13:58:10.115 [main] INFO  com.revature.Calculator - Adding -20 and -40
+13:58:10.119 [main] INFO  com.revature.Calculator - Dividing 15.0 by 2.0
